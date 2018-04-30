@@ -1,0 +1,17 @@
+function [I] = proposed(L)
+%% function to test the proposed PTF - CVI plot
+        Lout = L;
+        y = zeros(size(L));    
+        y(Lout<16) = Lout(Lout<16)./1599.999999;
+        y((Lout>=16)&(Lout<496)) = ((Lout((Lout>=22)&(Lout<496)) + 67.2727)./224.2429).^5;
+        y(Lout>=496) = 10.^((Lout(Lout>=496) + 31)./263.5);
+        I = y; 
+        
+        
+% Lout1( L_HDR<0.01) = 3199.99*L_HDR(L_HDR<0.01);
+% Lout1((L_HDR>=0.01)&(L_HDR<100)) = 274.5114*(L_HDR((L_HDR>=0.01)&(L_HDR<100)).^(1/6))-95.4169;
+% Lout1( L_HDR>=100) = 263.5*log10(L_HDR(L_HDR>=100)) - 31;
+            
+
+end
+ 

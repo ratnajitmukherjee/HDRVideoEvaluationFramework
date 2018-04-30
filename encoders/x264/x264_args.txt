@@ -1,0 +1,3 @@
+START x264_8bit.exe --profile high444 --preset veryslow --bframes 0 --b-adapt 0 --tune psnr --qp 5 --input-depth 8 --input-csp i444 --input-res 1920x1080 --output-csp i444 -o C:\Users\Ratnajit\Desktop\ldr8.264 C:\Users\Ratnajit\Desktop\ldr8.yuv -v --psnr
+
+START x264_10bit.exe --profile high444 --preset veryslow --bframes 0 --b-adapt 0 --tune psnr --qp 5 --input-depth 10 --input-csp i444 --input-res 1920x1080 --output-csp i444 -o C:\Users\Ratnajit\Desktop\ldr10.264 C:\Users\Ratnajit\Desktop\ldr10.yuv -v --psnr

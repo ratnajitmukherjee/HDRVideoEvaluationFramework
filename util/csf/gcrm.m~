@@ -1,0 +1,24 @@
+function [ Yout ] = gcrm( Yin, bitdepth )
+%% function to generate the Y reconstruction of GCRM
+
+% generate encoding from GCRM
+    Smin = 0; Smax = 2^bitdepth - 1;    
+    Lmax = max(Yin(:));
+    Lmin = min(Yin(:));    
+    L = Yin;
+    Lmean = mean(Yin(:));
+    c1 = (Smax - Smin)./((Lmax./(Lmax +17.4*Lmean^0.63)) - (Lmin./(Lmin +17.4*Lmean^0.63)));
+    c2 = Smin - (s.c1*Lmin)./(Lmin + 17.4*Lmean^0.63);
+    S = (s.c1.*L)./(L + 17.4*s.Lmean^0.63) + s.c2;           
+    Lout = S;
+    
+% generate decoding from GCRM        
+    S = Lout;        
+    Z = 17.4*(Lmean)^0.63;
+    L = Z./((s.c1./(S - s.c2)) - 1);
+    Lout = L;
+    end 
+
+
+end
+

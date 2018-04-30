@@ -1,0 +1,152 @@
+﻿Build started 22/03/2015 11:06:29.
+     1>Project "C:\Users\Ratnajit\Documents\JM\ldecod_vc10.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Ildecod\inc /Ilcommon\inc /Zi /nologo /W3 /WX- /Ox /Ob2 /D WIN32 /D NDEBUG /D _CRT_SECURE_NO_DEPRECATE /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:fast /Zc:wchar_t /Zc:forScope /openmp- /Fo".\ldecod\Release_x64_vc10/" /Fd".\ldecod\Release_x64_vc10/vc120.pdb" /FR".\ldecod\Release_x64_vc10/" /Gd /TC /errorReport:prompt lcommon\src\blk_prediction.c lcommon\src\config_common.c lcommon\src\img_io.c lcommon\src\img_process.c lcommon\src\input.c lcommon\src\io_raw.c lcommon\src\io_tiff.c lcommon\src\mbuffer_common.c lcommon\src\memalloc.c lcommon\src\mv_prediction.c lcommon\src\nalucommon.c lcommon\src\parsetcommon.c lcommon\src\transform.c lcommon\src\win32.c ldecod\src\annexb.c ldecod\src\biaridecod.c ldecod\src\block.c ldecod\src\cabac.c ldecod\src\configfile.c ldecod\src\context_ini.c ldecod\src\decoder_test.c ldecod\src\dec_statistics.c ldecod\src\erc_api.c ldecod\src\erc_do_i.c ldecod\src\erc_do_p.c ldecod\src\errorconcealment.c ldecod\src\filehandle.c ldecod\src\fmo.c ldecod\src\header.c ldecod\src\image.c ldecod\src\intra16x16_pred.c ldecod\src\intra16x16_pred_mbaff.c ldecod\src\intra16x16_pred_normal.c ldecod\src\intra4x4_pred.c ldecod\src\intra4x4_pred_mbaff.c ldecod\src\intra4x4_pred_normal.c ldecod\src\intra8x8_pred.c ldecod\src\intra8x8_pred_mbaff.c ldecod\src\intra8x8_pred_normal.c ldecod\src\intra_chroma_pred.c ldecod\src\intra_chroma_pred_mbaff.c ldecod\src\intra_pred_common.c ldecod\src\ldecod.c ldecod\src\leaky_bucket.c ldecod\src\loopFilter.c ldecod\src\loop_filter_mbaff.c ldecod\src\loop_filter_normal.c ldecod\src\macroblock.c ldecod\src\mbuffer.c ldecod\src\mbuffer_mvc.c ldecod\src\mb_access.c ldecod\src\mb_prediction.c ldecod\src\mb_read.c ldecod\src\mc_direct.c ldecod\src\mc_prediction.c ldecod\src\nal.c ldecod\src\nalu.c ldecod\src\output.c ldecod\src\parset.c ldecod\src\quant.c ldecod\src\read_comp_cabac.c ldecod\src\read_comp_cavlc.c ldecod\src\rtp.c ldecod\src\sei.c ldecod\src\transform8x8.c ldecod\src\vlc.c
+         blk_prediction.c
+         config_common.c
+         img_io.c
+         img_process.c
+         input.c
+         io_raw.c
+         io_tiff.c
+         mbuffer_common.c
+         memalloc.c
+         mv_prediction.c
+         nalucommon.c
+         parsetcommon.c
+         transform.c
+         win32.c
+         annexb.c
+         biaridecod.c
+         block.c
+         cabac.c
+         configfile.c
+         context_ini.c
+         Generating Code...
+         Compiling...
+         decoder_test.c
+         dec_statistics.c
+         erc_api.c
+         erc_do_i.c
+         erc_do_p.c
+         errorconcealment.c
+         filehandle.c
+         fmo.c
+         header.c
+         image.c
+         intra16x16_pred.c
+         intra16x16_pred_mbaff.c
+         intra16x16_pred_normal.c
+         intra4x4_pred.c
+         intra4x4_pred_mbaff.c
+         intra4x4_pred_normal.c
+         intra8x8_pred.c
+         intra8x8_pred_mbaff.c
+         intra8x8_pred_normal.c
+         intra_chroma_pred.c
+         Generating Code...
+         Compiling...
+         intra_chroma_pred_mbaff.c
+         intra_pred_common.c
+         ldecod.c
+         leaky_bucket.c
+         loopFilter.c
+         loop_filter_mbaff.c
+         loop_filter_normal.c
+         macroblock.c
+         mbuffer.c
+         mbuffer_mvc.c
+         mb_access.c
+         mb_prediction.c
+         mb_read.c
+         mc_direct.c
+         mc_prediction.c
+         nal.c
+         nalu.c
+         output.c
+         parset.c
+         quant.c
+         Generating Code...
+         Compiling...
+         read_comp_cabac.c
+         read_comp_cavlc.c
+         rtp.c
+         sei.c
+         transform8x8.c
+         vlc.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:".\bin\ldecod.exe" /INCREMENTAL:NO /NOLOGO Ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\ldecod\Release_x64_vc10/ldecod.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /IMPLIB:".\bin\ldecod.lib" /MACHINE:X64 /FIXED:NO .\ldecod\Release_x64_vc10/blk_prediction.obj
+         .\ldecod\Release_x64_vc10/config_common.obj
+         .\ldecod\Release_x64_vc10/img_io.obj
+         .\ldecod\Release_x64_vc10/img_process.obj
+         .\ldecod\Release_x64_vc10/input.obj
+         .\ldecod\Release_x64_vc10/io_raw.obj
+         .\ldecod\Release_x64_vc10/io_tiff.obj
+         .\ldecod\Release_x64_vc10/mbuffer_common.obj
+         .\ldecod\Release_x64_vc10/memalloc.obj
+         .\ldecod\Release_x64_vc10/mv_prediction.obj
+         .\ldecod\Release_x64_vc10/nalucommon.obj
+         .\ldecod\Release_x64_vc10/parsetcommon.obj
+         .\ldecod\Release_x64_vc10/transform.obj
+         .\ldecod\Release_x64_vc10/win32.obj
+         .\ldecod\Release_x64_vc10/annexb.obj
+         .\ldecod\Release_x64_vc10/biaridecod.obj
+         .\ldecod\Release_x64_vc10/block.obj
+         .\ldecod\Release_x64_vc10/cabac.obj
+         .\ldecod\Release_x64_vc10/configfile.obj
+         .\ldecod\Release_x64_vc10/context_ini.obj
+         .\ldecod\Release_x64_vc10/decoder_test.obj
+         .\ldecod\Release_x64_vc10/dec_statistics.obj
+         .\ldecod\Release_x64_vc10/erc_api.obj
+         .\ldecod\Release_x64_vc10/erc_do_i.obj
+         .\ldecod\Release_x64_vc10/erc_do_p.obj
+         .\ldecod\Release_x64_vc10/errorconcealment.obj
+         .\ldecod\Release_x64_vc10/filehandle.obj
+         .\ldecod\Release_x64_vc10/fmo.obj
+         .\ldecod\Release_x64_vc10/header.obj
+         .\ldecod\Release_x64_vc10/image.obj
+         .\ldecod\Release_x64_vc10/intra16x16_pred.obj
+         .\ldecod\Release_x64_vc10/intra16x16_pred_mbaff.obj
+         .\ldecod\Release_x64_vc10/intra16x16_pred_normal.obj
+         .\ldecod\Release_x64_vc10/intra4x4_pred.obj
+         .\ldecod\Release_x64_vc10/intra4x4_pred_mbaff.obj
+         .\ldecod\Release_x64_vc10/intra4x4_pred_normal.obj
+         .\ldecod\Release_x64_vc10/intra8x8_pred.obj
+         .\ldecod\Release_x64_vc10/intra8x8_pred_mbaff.obj
+         .\ldecod\Release_x64_vc10/intra8x8_pred_normal.obj
+         .\ldecod\Release_x64_vc10/intra_chroma_pred.obj
+         .\ldecod\Release_x64_vc10/intra_chroma_pred_mbaff.obj
+         .\ldecod\Release_x64_vc10/intra_pred_common.obj
+         .\ldecod\Release_x64_vc10/ldecod.obj
+         .\ldecod\Release_x64_vc10/leaky_bucket.obj
+         .\ldecod\Release_x64_vc10/loopFilter.obj
+         .\ldecod\Release_x64_vc10/loop_filter_mbaff.obj
+         .\ldecod\Release_x64_vc10/loop_filter_normal.obj
+         .\ldecod\Release_x64_vc10/macroblock.obj
+         .\ldecod\Release_x64_vc10/mbuffer.obj
+         .\ldecod\Release_x64_vc10/mbuffer_mvc.obj
+         .\ldecod\Release_x64_vc10/mb_access.obj
+         .\ldecod\Release_x64_vc10/mb_prediction.obj
+         .\ldecod\Release_x64_vc10/mb_read.obj
+         .\ldecod\Release_x64_vc10/mc_direct.obj
+         .\ldecod\Release_x64_vc10/mc_prediction.obj
+         .\ldecod\Release_x64_vc10/nal.obj
+         .\ldecod\Release_x64_vc10/nalu.obj
+         .\ldecod\Release_x64_vc10/output.obj
+         .\ldecod\Release_x64_vc10/parset.obj
+         .\ldecod\Release_x64_vc10/quant.obj
+         .\ldecod\Release_x64_vc10/read_comp_cabac.obj
+         .\ldecod\Release_x64_vc10/read_comp_cavlc.obj
+         .\ldecod\Release_x64_vc10/rtp.obj
+         .\ldecod\Release_x64_vc10/sei.obj
+         .\ldecod\Release_x64_vc10/transform8x8.obj
+         .\ldecod\Release_x64_vc10/vlc.obj
+         ldecod_vc10.vcxproj -> C:\Users\Ratnajit\Documents\JM\.\bin\ldecod.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o".\bin\ldecod.bsc" .\ldecod\Release_x64_vc10/blk_prediction.sbr .\ldecod\Release_x64_vc10/config_common.sbr .\ldecod\Release_x64_vc10/img_io.sbr .\ldecod\Release_x64_vc10/img_process.sbr .\ldecod\Release_x64_vc10/input.sbr .\ldecod\Release_x64_vc10/io_raw.sbr .\ldecod\Release_x64_vc10/io_tiff.sbr .\ldecod\Release_x64_vc10/mbuffer_common.sbr .\ldecod\Release_x64_vc10/memalloc.sbr .\ldecod\Release_x64_vc10/mv_prediction.sbr .\ldecod\Release_x64_vc10/nalucommon.sbr .\ldecod\Release_x64_vc10/parsetcommon.sbr .\ldecod\Release_x64_vc10/transform.sbr .\ldecod\Release_x64_vc10/win32.sbr .\ldecod\Release_x64_vc10/annexb.sbr .\ldecod\Release_x64_vc10/biaridecod.sbr .\ldecod\Release_x64_vc10/block.sbr .\ldecod\Release_x64_vc10/cabac.sbr .\ldecod\Release_x64_vc10/configfile.sbr .\ldecod\Release_x64_vc10/context_ini.sbr .\ldecod\Release_x64_vc10/decoder_test.sbr .\ldecod\Release_x64_vc10/dec_statistics.sbr .\ldecod\Release_x64_vc10/erc_api.sbr .\ldecod\Release_x64_vc10/erc_do_i.sbr .\ldecod\Release_x64_vc10/erc_do_p.sbr .\ldecod\Release_x64_vc10/errorconcealment.sbr .\ldecod\Release_x64_vc10/filehandle.sbr .\ldecod\Release_x64_vc10/fmo.sbr .\ldecod\Release_x64_vc10/header.sbr .\ldecod\Release_x64_vc10/image.sbr .\ldecod\Release_x64_vc10/intra16x16_pred.sbr .\ldecod\Release_x64_vc10/intra16x16_pred_mbaff.sbr .\ldecod\Release_x64_vc10/intra16x16_pred_normal.sbr .\ldecod\Release_x64_vc10/intra4x4_pred.sbr .\ldecod\Release_x64_vc10/intra4x4_pred_mbaff.sbr .\ldecod\Release_x64_vc10/intra4x4_pred_normal.sbr .\ldecod\Release_x64_vc10/intra8x8_pred.sbr .\ldecod\Release_x64_vc10/intra8x8_pred_mbaff.sbr .\ldecod\Release_x64_vc10/intra8x8_pred_normal.sbr .\ldecod\Release_x64_vc10/intra_chroma_pred.sbr .\ldecod\Release_x64_vc10/intra_chroma_pred_mbaff.sbr .\ldecod\Release_x64_vc10/intra_pred_common.sbr .\ldecod\Release_x64_vc10/ldecod.sbr .\ldecod\Release_x64_vc10/leaky_bucket.sbr .\ldecod\Release_x64_vc10/loopFilter.sbr .\ldecod\Release_x64_vc10/loop_filter_mbaff.sbr .\ldecod\Release_x64_vc10/loop_filter_normal.sbr .\ldecod\Release_x64_vc10/macroblock.sbr .\ldecod\Release_x64_vc10/mbuffer.sbr .\ldecod\Release_x64_vc10/mbuffer_mvc.sbr .\ldecod\Release_x64_vc10/mb_access.sbr .\ldecod\Release_x64_vc10/mb_prediction.sbr .\ldecod\Release_x64_vc10/mb_read.sbr .\ldecod\Release_x64_vc10/mc_direct.sbr .\ldecod\Release_x64_vc10/mc_prediction.sbr .\ldecod\Release_x64_vc10/nal.sbr .\ldecod\Release_x64_vc10/nalu.sbr .\ldecod\Release_x64_vc10/output.sbr .\ldecod\Release_x64_vc10/parset.sbr .\ldecod\Release_x64_vc10/quant.sbr .\ldecod\Release_x64_vc10/read_comp_cabac.sbr .\ldecod\Release_x64_vc10/read_comp_cavlc.sbr .\ldecod\Release_x64_vc10/rtp.sbr .\ldecod\Release_x64_vc10/sei.sbr .\ldecod\Release_x64_vc10/transform8x8.sbr .\ldecod\Release_x64_vc10/vlc.sbr
+     1>Done Building Project "C:\Users\Ratnajit\Documents\JM\ldecod_vc10.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:23.41
